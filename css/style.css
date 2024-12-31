@@ -1,0 +1,679 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'SSports World-Regular';
+    src: url('../fonts/Sports World-Regular.otf') format('truetype');
+
+}
+
+body {
+    background-color: #f7f7f7;
+
+}
+
+header {
+    padding: 1.25em;
+    color: #fff;
+    text-align: center;
+    height: 4em;
+    background-color: #045694;
+    font-family: 'SSports World-Regular';
+    font-weight: 100;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.25em;
+}
+
+header img {
+    height: 4em;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #007bff;
+    transition: all ease 0.5s;
+
+}
+
+.title-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-img h1 {
+    font-size: 20px;
+}
+
+
+.mini-nav {
+    text-align: center;
+    background-color: #045694;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    font-family: 'SSports World-Regular';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.mini-nav img {
+    height: 4em;
+    margin-bottom: 5px;
+}
+
+.mini-nav h1 {
+    font-size: 1.3em;
+    padding: 5.5px;
+
+}
+
+#banner-index {
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../img/bannerpele2.jpg');
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#banner-index h1 {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+    font-size: 4.2em;
+}
+
+.text-banner p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-text {
+    margin: 5.5em auto;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+.main-text h4 {
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.main-text p {
+
+    font-family: "Oswald", serif;
+    font-size: 20px;
+
+}
+
+#second-banner {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/maradona-banner.jpg');
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#second-banner h1 {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+    font-size: 4.2em;
+}
+
+.text-plays {
+    margin: 5.5em auto;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+.text-plays h4 {
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    font-size: 1.6em;
+    text-transform: uppercase;
+
+}
+
+.text-plays p {
+    font-family: "Oswald", serif;
+    font-size: 20px;
+}
+
+.plays-section {
+    display: flex;
+    justify-content: center;
+    margin: 5em auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.plays-video iframe {
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plays-video {
+    background-color: #045694;
+    height: 500px;
+    width: 560px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7), 0px 8px 16px rgba(0, 0, 0, 0.15)
+}
+
+.plays-video p {
+    color: #fff;
+
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    width: 80%;
+
+
+}
+
+.plays-video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+    transition: all ease 0.5s;
+}
+
+footer {
+    background-color: #045694;
+    padding: 1.25em;
+    color: #fff;
+    text-align: center;
+    height: 4em;
+    font-family: "Oswald", serif;
+    text-transform: uppercase;
+
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.form-login {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.form-login h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+    font-weight: 100;
+
+}
+
+.form-login label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #045694;
+}
+
+.form-login input[type="text"],
+.form-login input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+
+}
+
+.form-login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #045694;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+
+
+.form-login input[type="submit"]:hover {
+    background-color: #0069d9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.title-dash {
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 4em;
+    font-size: 15px;
+}
+
+#banner-dash {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../img/cruyff2.jpg');
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner-dash h1 {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+    font-size: 4.2em;
+}
+
+.dashboard-controls {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+
+    gap: 50px;
+}
+
+.form-dash-add {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.form-dash-add h4 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #045694;
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+}
+
+.form-dash-add label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #045694;
+}
+
+.form-dash-add input[type="text"],
+.form-dash-add input[type="number"],
+.form-dash-add input[type="date"],
+.form-dash-add textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-dash-add textarea {
+    height: 80px;
+    resize: none;
+}
+
+.form-dash-add input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #045694;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-dash-add input[type="submit"]:hover {
+    background-color: #0069d9;
+    transition: all ease 0.7s;
+}
+
+.box-mens {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.box-mens h4 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #045694;
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+
+
+}
+
+.box-womens {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.box-womens h4 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #045694;
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+}
+
+.player-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+}
+
+.player-table th,
+.player-table td {
+    padding: 12px 15px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.player-table th {
+    background-color: #f4f4f4;
+    font-weight: 700;
+    color: #045694;
+}
+
+.player-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.player-table a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.player-table i {
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.player-table a:first-child i {
+    color: #007bff;
+
+}
+
+.player-table a:last-child i {
+    color: #e14d4d;
+
+}
+
+.player-table i:hover {
+    transform: scale(1.2);
+}
+
+
+#mens-banner {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/messi.jpg');
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mens-banner h1 {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+    font-size: 4.2em;
+}
+
+#womens-banner {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../img/alexia2.jpg');
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#womens-banner h1 {
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    font-family: 'SSports World-Regular';
+    font-size: 4.2em;
+}
+
+.title-players {
+    margin: 5.5em auto;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    width: 50%;
+}
+
+.title-players h2 {
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.title-players p {
+
+    font-family: "Oswald", serif;
+    font-size: 20px;
+
+}
+
+.main-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 280px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+
+}
+
+.card-text {
+    font-family: "Oswald", serif;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    max-width: 248px;
+    max-height: 52px;
+
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all ease 0.5s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #045694;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "Oswald", serif;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+.main-box-details {
+    margin: 20px auto;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+
+}
+
+
+.box-content-players {
+    margin-top: 30px;
+    max-width: 80%;
+    max-height: 500px;
+}
+
+.box-content-players img {
+    height: auto;
+    margin-left: auto;
+    margin-right: 25px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+.box-content-players img:hover {
+    transform: translateY(-5px);
+    transition: all ease 0.5s;
+}
+
+
+.text-bio-details p {
+    font-family: "Oswald", serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#detailsImg {
+    max-width: 800px;
+    max-height: 500px;
+}
+
+.title-player-detail h1 {
+    font-size: 50px;
+    color: #045694;
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.box-info-players {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: -250px;
+    margin-left: 320px;
+    background-color: #045694;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.box-info-players h4 {
+    color: white;
+    font-family: 'SSports World-Regular';
+    text-transform: uppercase;
+}
+
+.box-info-players hr {
+    color: #ccc;
+}

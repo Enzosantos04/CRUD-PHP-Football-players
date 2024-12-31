@@ -1,0 +1,80 @@
+  <section id="banner-dash">
+        <div class="text-banner">
+            <h1> Football Legends Dashboard.</h1>
+            <p>Manage all Player's content.</p>
+        </div>
+    </section>
+    <div class="title-dash">
+        <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
+        <p></p>
+    </div>
+    <div class="dashboard-controls">
+        <div class="form-dash-add">
+            <form action="addMens.php" method="post">
+                <h4>Add Mens Players</h4>
+                <label>Name:</label>
+                <input type="text" placeholder="Player's Name" name="name">
+                <label>Birth:</label>
+                <input type="date" placeholder="Birth Date" name="birth_date">
+                <label>Natitonality:</label>
+                <input type="text" placeholder="Nationality" name="nationality">
+                <label>Position:</label>
+                <input type="text" placeholder="Position" name="position">
+                <label>Goals:</label>
+                <input type="number" placeholder="Goals" name="goals">
+                <label>Assists:</label>
+                <input type="number" placeholder="Assists" name="assists">
+                <label>Titles:</label>
+                <input type="number" placeholder="Titles" name="titles">
+                <label>Image:</label>
+                <input type="text" placeholder="Image" name="image_main">
+                <label>Image Details:</label>
+                <input type="text" placeholder="Image Details" name="image_details">
+                <label>Small Biography for cards:</label>
+                <textarea name="mini_bio"></textarea>
+                <label>Biography:</label>
+                <textarea name="biography"></textarea>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="box-mens">
+            <h4>Manage Mens Players</h4>
+            <?php
+            listMensUpdateDelete($dbConnect);
+            ?>
+        </div>
+        <div class="form-dash-add">
+            <form action="addWomens.php" method="post">
+                <h4>Add Womens Players</h4>
+                <label>Name:</label>
+                <input type="text" placeholder="Player's Name" name="name">
+                <label>Birth:</label>
+                <input type="date" placeholder="Birth Date" name="birth_date">
+                <label>Natitonality:</label>
+                <input type="text" placeholder="Nationality" name="nationality">
+                <label>Position:</label>
+                <input type="text" placeholder="Position" name="position">
+                <label>Goals:</label>
+                <input type="number" placeholder="Goals" name="goals">
+                <label>Assists:</label>
+                <input type="number" placeholder="Assists" name="assists">
+                <label>Titles:</label>
+                <input type="number" placeholder="Titles" name="titles">
+                <label>Image:</label>
+                <input type="text" placeholder="Image" name="image_main">
+                <label>Image Details:</label>
+                <input type="text" placeholder="Image Details" name="image_details">
+                <label>Small Biography for cards:</label>
+                <textarea name="mini_bio"></textarea>
+                <label>Biography:</label>
+                <textarea name="biography"></textarea>
+                <input type="submit" value="Add">
+            </form>
+        </div>
+        <div class="box-womens">
+            <h4>Manage Womens Players</h4>
+            <?php
+            listWomensUpdateDelete($dbConnect)
+            ?>
+        </div>
+    </div>
